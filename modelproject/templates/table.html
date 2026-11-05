@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <center>
+        <table border="2px">
+            <caption><h1>student database</h1></caption>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>Branch</th>
+                <th>Place</th>
+                <th>Phone</th>
+                <th>DOB</th>
+                <th>Email</th>
+            </tr>
+        
+            {% for i in stud %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.branch}}</td>
+                <td>{{i.place}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.dob}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
